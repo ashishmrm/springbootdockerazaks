@@ -1,0 +1,48 @@
+.imageSize {
+    width : 100% !important;
+}
+
+.iconSize {
+    width : 30px !important;
+    border-radius: 50%;
+}
+
+.memberInfo {
+    text-align: center;
+    margin-left: 5px !important;
+}
+
+.myrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px !important;
+}
+
+.anyClass {
+    height:150px;
+    overflow-y: scroll;
+}
+
+
+.teamDelhi {
+    background-color: navy;
+    width: 100%;
+}
+.teamMumbai {
+    background-color: blue;
+}
+.teamChennai {
+    background-color: yellow;
+}
+.teamKolkata {
+    background-color: gold;
+}
+.teamBanglore {
+    background-color: red;
+}
+.teamPunjab {
+    background-color: green;
+}
+.teamHyderabad {
+    background-color: grey;
+}

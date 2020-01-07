@@ -1,0 +1,16 @@
+<div class="myrow">
+<div class="col-xs-2">
+        <div style="font-size: 2rem">#{{team.position}}</div>
+      </div>
+      <div class="col-xs-4">
+        <img src="../assets/{{team.image}}" height="150" width="150" alt="...">
+      </div>
+      <div class="col-xs-6">
+        <div class="row memberInfo" *ngFor="let member of team.members">
+          <div style="font-size: 1.2rem; font-family: cursive;color: papayawhip" class="col-xs-10 col-xs-offset-1">
+            <img src="../assets/{{member.image}}" class="iconSize"> {{member.name}}
+          </div>
+        </div>
+        <div class="row memberInfo" style="color: red">.....</div>
+      </div>
+    </div>
