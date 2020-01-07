@@ -25,3 +25,25 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Create Docker image
+
+`docker build -t iplangularapp:latest .`
+and then tag it
+`docker tag iplangularapp ashishmrm/iplangularapp:latest`
+and then push it to the dockerhub
+`docker push ashishmrm/iplangularapp`
+you can try running it as well
+`docker run -p 80:80 iplangularapp:latest`
+
+## Run on AZ AKS
+
+To get the cluster info : 
+`az aks get-credentials --resource-group=Dev --name=iplangularappcluster`
+View info on service, nodes, pods :
+`kubectl get service | pods | nodes`
+Aply the yaml file
+`kubectl apply –f ipldoc.yaml`
+This will create and start the service. 
+
