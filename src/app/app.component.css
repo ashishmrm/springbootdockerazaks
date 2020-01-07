@@ -1,0 +1,15 @@
+.myrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px !important;
+    font-size: 22px;
+}
+
+.anyClass {
+    height:850px;
+    overflow-y: scroll;
+  }
+
+  .mycard {
+      color: wheat;
+  }
