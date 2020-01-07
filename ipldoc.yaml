@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: angularapp
+  name: iplangularapp
 spec:
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: angular
-          image: ashishmrm/angularapp:latest
+          image: ashishmrm/iplangularapp:latest
           ports:
             - containerPort: 80
 ---
@@ -22,7 +22,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: angularapp
+  name: iplangularapp
 spec:
   selector:
     app: angular
